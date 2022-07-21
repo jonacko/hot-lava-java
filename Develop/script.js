@@ -1,9 +1,8 @@
 /** Pseudo code
- * Alert to tell user to click but to generate a password
- * When red button is clicked, user is prompted to specify whether they would like upper case, lower case & special characters in their password
- * User is prompted to specify a length for their password between 8-128 char
+ *  * When red button is clicked, user is prompted to specify a length for their password between 8-128 char
+ * user is prompted to specify whether they would like upper case, lower case & special characters in their password
  * Loop until user chooses a character length between 8-128 char
- * Password is generated based on the above outcomes
+ * Password is generated in the 'your secure password' box based on the above outcomes
  */
 
 // Assignment code here
@@ -70,7 +69,7 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
   alert("Please choose a value that is at least 8 characters and no more than 128 characters.");
   return;
 } else { 
-   alert("nice one");
+   alert("Thank you.  Please proceed to generate password.");
 }
 
   //this asks the user to set the parameters of their password
@@ -104,29 +103,21 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
     console.log(getNumber())
   }
 
-// function promptForLength() {
-//   let userResponse = prompt("How long would you like your password to be? (No more than 128 characters)");
-//   let numberResponse = Number(userResponse);
-//   while (isNaN(numberResponse) || numberResponse > 128 || numberResponse < 8) {
-//       if (isNaN(numberResponse)) {
-//         userResponse = prompt("That's not a number. Please enter a number.");
-//       }
-//       else if(numberResponse > 128) {
-//         userResponse = prompt("That's too many characters.");
-//       }
-//       else if (numberResponse < 8) {
-//         userResponse = prompt("That's not enough characters.");
-//       }
+//   // Returns a string on the console, what that does who knows!?
 
-//     }
-//     numberResponse = Number(userResponse);
-//   }
+  let writePassword = '';
 
-// {
-// document.getElementById("generate").value=promptForLength;
-// }
+  const typesCount = lowerCaseChoice + upperCaseChoice + numberChoice + specialCharChoice;
 
+  if(typesCount === false) {
+    return '';
+  }
 
+  var passwordString = [];
+  for (let i = lowerCaseChoice; i < length; i+= typesCount) {
+    passwordString.push(i);
+  }
+console.log(passwordString);
 }
 
 
@@ -140,18 +131,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-
-
-  //this prompts users to type a length for the password.  OR operator > 128 to add
-
-
-
-
-  /** 
-let name = "Angela";
-alert(name);
-*/
 
 }
 
