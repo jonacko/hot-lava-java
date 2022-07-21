@@ -1,10 +1,10 @@
 # hot-lava-java
 Challenge 3 assignment for BCU Bootcamp due 21-07-22
-Deployed URL: 
+Deployed URL: https://jonacko.github.io/hot-lava-java/
 
 Image of deployed web page:
 
-[image 1 here]
+![image](https://user-images.githubusercontent.com/106882755/180273035-c888cd02-c038-405d-b6fe-33c8fdd5f49b.png)
 
 Contents:
 
@@ -17,7 +17,7 @@ Contents:
 
 This project was undertaken as a submission for a Birmingham City Bootcamp assignment, with a brief to create a random password generator that meets a certain criteria.  The user story and acceptance criteria are below:
 
-[image 2 here]
+![image](https://user-images.githubusercontent.com/106882755/180273187-89d77f11-c81d-4c1d-9d9b-fcc12b860cda.png)
 
 ## 2. Key amendments:
 
