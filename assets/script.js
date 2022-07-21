@@ -1,4 +1,4 @@
-/** Pseudo code
+/** PSEUDO CODE
  *  * When red button is clicked, user is prompted to specify a length for their password between 8-128 char.
  * user is prompted to specify whether they would like upper case, lower case & special characters in their password.
  * Loop until user chooses a character length between 8-128 char.
@@ -6,7 +6,7 @@
  */
 
 
-// Assignment code here
+// ASSIGNMENT CODE HERE
 
 
 // Generator functions - these work but were written before I added the getLowerCase, getUpperCase etc. methods.
@@ -92,7 +92,9 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
     return '';
   }
 
-/* I am aware that this for loop makes absolutely no sense but I have left it like this because it is at least printing something to the console and not returning an error.  I can the try and work on it again later when I have a better understanding of what I need to do. */
+/* I am aware that this for loop makes absolutely no sense but I have left it like this because it is at least printing something to the console and not returning an error.  
+I want the 'length' to mean the number of characters specified by the user but that is not the case at the moment.
+I can then try and work on it again later when I have a better understanding of what I need to do. */
 
   var passwordString = [];
   for (let i = lowerCaseChoice + upperCaseChoice + numberChoice + specialCharChoice; i < length; i+= typesCount) {
@@ -100,6 +102,7 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
   }
 console.log(passwordString);
 }
+
 
 //The below comments and code were provided for us.  
 // TO DO: Take the string printed in the console (once it works) and print in the text area.  Currently unsure how to make this work.
