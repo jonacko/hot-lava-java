@@ -2,10 +2,14 @@
 Challenge 3 assignment for BCU Bootcamp due 21-07-22
 Deployed URL: 
 
+Image of deployed web page:
+
+[image 1 here]
+
 Contents:
 
 1. Summary
-2. Key features
+2. Key amendments
 3. Issues encountered/further amendments
 4. Credits
 
@@ -13,14 +17,15 @@ Contents:
 
 This project was undertaken as a submission for a Birmingham City Bootcamp assignment, with a brief to create a random password generator that meets a certain criteria.  The user story and acceptance criteria are below:
 
-[image 1 here]
+[image 2 here]
 
-## 2. Key features
+## 2. Key amendments:
 
-
-
-## 2a. Key optimization amendments (for smartphone/small tablet eg. iPad air/iPad mini)
-
+- psuedo code written
+- functions to generate random characters of each specified criteria written 
+- generate button is reactive
+- confirm  messages respond to user input and print in console
+- for loop pushed string of numeric characters to console
 
 
 ## 3. Issues encountered/further amendments
