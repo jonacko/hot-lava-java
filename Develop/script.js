@@ -1,37 +1,16 @@
 /** Pseudo code
- *  * When red button is clicked, user is prompted to specify a length for their password between 8-128 char
- * user is prompted to specify whether they would like upper case, lower case & special characters in their password
- * Loop until user chooses a character length between 8-128 char
- * Password is generated in the 'your secure password' box based on the above outcomes
+ *  * When red button is clicked, user is prompted to specify a length for their password between 8-128 char.
+ * user is prompted to specify whether they would like upper case, lower case & special characters in their password.
+ * Loop until user chooses a character length between 8-128 char.
+ * Password is generated in the 'your secure password' box based on the above outcomes.
  */
+
 
 // Assignment code here
 
-// const resultEL = document.getElementById('result');
-// const lengthEL = document.getElementById('length');
-// const uppercaseEL = document.getElementById('uppercase');
-// const lowercaseEL = document.getElementById('lowercase');
-// const numberEL = document.getElementById('number');
-// const symbolEL = document.getElementById('symbol');
-// const generateEL = document.getElementById('generate');
-// const clipboardEL = document.getElementById('clipboard');
 
-// const randomFunc = {
-// lower: getLowercase,
-// upper: getUppercase,
-// number: getNumber,
-// symbol: getSpecialChar
-
-// };
-
-// generateEL.addEventListener('click', () => {
-// const length = lengthEl.vale;
-
-// console.log(length);
-
-// })
-
-//Generator functions - these worked in the console
+// Generator functions - these work but were written before I added the getLowerCase, getUpperCase etc. methods.
+// I tried to comment them out as I thought they were no longer necessary but the page breaks when I do, so I've left them in.
 
 function getLowercase ()  {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97); 
@@ -55,12 +34,12 @@ function getSpecialChar ()  {
 }
 
 
-// This makes the button reactive
+// Makes the button reactive
 
 var generatePassword = function () {
 
-//Prompt for length
 
+// Prompts for length and returns alerts based on user input.  This works as intended.
 
 let length = prompt("How long would you like your password to be?  Please choose a value of at least 8 characters and less than 128 characters.");
 let numberResponse = Number(length);
@@ -72,7 +51,7 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
    alert("Thank you.  Please proceed to generate password.");
 }
 
-  //this asks the user to set the parameters of their password
+  // Asks the user to set the parameters of their password.  This works as intended.
 
   var lowerCaseChoice = confirm("Would you like your password to contain lower case letters?  Press 'ok' if so, 'cancel' if not.");
 
@@ -103,9 +82,9 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
     console.log(getNumber())
   }
 
-//   // Returns a string on the console, what that does who knows!?
-
-  let writePassword = '';
+// Returns a string of numbers on the console, but not the string I want.
+// TO DO: I want it to return the outcome of all the above 'get' methods, only if they are true.  Currently unsure how to write this code.
+// TO DO: I then want it to return a ransomised string of the above 'get' outcomes, the number in the string being equal to the value of 'length'.  Currently unsure how to write this code.
 
   const typesCount = lowerCaseChoice + upperCaseChoice + numberChoice + specialCharChoice;
 
@@ -113,12 +92,17 @@ if (length < 8 || length > 128  || isNaN(numberResponse))  {
     return '';
   }
 
+/* I am aware that this for loop makes absolutely no sense but I have left it like this because it is at least printing something to the console and not returning an error.  I can the try and work on it again later when I have a better understanding of what I need to do. */
+
   var passwordString = [];
-  for (let i = lowerCaseChoice; i < length; i+= typesCount) {
+  for (let i = lowerCaseChoice + upperCaseChoice + numberChoice + specialCharChoice; i < length; i+= typesCount) {
     passwordString.push(i);
   }
 console.log(passwordString);
 }
+
+//The below comments and code were provided for us.  
+// TO DO: Take the string printed in the console (once it works) and print in the text area.  Currently unsure how to make this work.
 
 
 
