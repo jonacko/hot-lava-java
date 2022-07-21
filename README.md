@@ -1,6 +1,6 @@
 # hot-lava-java
-Challenge 3 assignment for BCU Bootcamp due 21-07-22
-Deployed URL: https://jonacko.github.io/hot-lava-java/
+- Challenge 3 assignment for BCU Bootcamp due 21-07-22
+- Deployed URL: https://jonacko.github.io/hot-lava-java/
 
 Image of deployed web page:
 
@@ -38,7 +38,7 @@ Please see commented out code for detail of issues/further amendments needed, bu
 - TO DO: print string from console (once above steps are completed) and print in the given text area.
 
 ## 4. Credits
-Help with random character generator functions: https://www.youtube.com/watch?v=duNmhKgtcsI
-Help with for loops: https://www.youtube.com/watch?v=24Wpg6njlYI
+- Help with random character generator functions: https://www.youtube.com/watch?v=duNmhKgtcsI
+- Help with for loops: https://www.youtube.com/watch?v=24Wpg6njlYI
 
 
