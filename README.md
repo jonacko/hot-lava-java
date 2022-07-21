@@ -6,7 +6,6 @@ Contents:
 
 1. Summary
 2. Key features
-    2a. Key optimization amendments
 3. Issues encountered/further amendments
 4. Credits
 
@@ -26,7 +25,15 @@ This project was undertaken as a submission for a Birmingham City Bootcamp assig
 
 ## 3. Issues encountered/further amendments
 
+Please see commented out code for detail of issues/further amendments needed, but summary is below:
+
+- TO DO: write code to return outcome of all 'get' methods, only if they are true.
+- TO DO: write code to return a string of all 'get' methods comined, rather than just one by one in the console.
+- TO DO: make for loop return string on randomised characters to match specified length that user inputs.
+- TO DO: print string from console (once above steps are completed) and print in the given text area.
 
 ## 4. Credits
-Avatar designer: https://avatarmaker.com/
-Image credits: https://Shuttershock.com
+Help with random character generator functions: https://www.youtube.com/watch?v=duNmhKgtcsI
+Help with for loops: https://www.youtube.com/watch?v=24Wpg6njlYI
+
+
